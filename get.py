@@ -19,7 +19,7 @@ if subdir is not None:
         exit(1)
 
     print("Copying %s*"%name)
-    cmd = "cp -Rp %s%s/%s* ."%(utils.student_repo_path,subdir,name)
+    cmd = "cp -Rp %s/%s/%s* ."%(utils.student_repo_path,subdir,name)
     r = os.system(cmd)
     if r != 0:
         print("Command failed:",cmd)

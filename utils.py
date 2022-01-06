@@ -50,6 +50,7 @@ def get_subdir(identifier):
     else:
         print("Auto-detected that this is an assignment")
         subdir="assignments"
+    return subdir
 
 def get_name(identifier):
     #if subdir != "assignments":
